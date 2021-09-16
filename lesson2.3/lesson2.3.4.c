@@ -47,7 +47,7 @@ struct stack stack_create( size_t size ) {
     };
 }
 void stack_destroy( struct stack* s ) {
-    array_int_free(s->data);
+    array_int_free(&s->data);
 }
 
 // Стек полный
